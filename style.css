@@ -1,0 +1,78 @@
+
+body {
+    background-color: rgb(221, 236, 243);
+    padding: 0px;
+    border: 0;
+    font: 20px Comic;
+
+}
+h1{
+    height: 50px;
+    border-bottom: 4px inset rgb(107, 102, 102);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#menuderoulant {
+    list-style-type: none;
+    margin: -40px;
+    margin-top: 0px;
+    text-align: left;
+    float: left;
+    width: 140px;
+    border-right: 1px inset rgb(107, 102, 102);
+}
+
+li {
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    margin: 5px;
+    position:relative;
+    padding-top: 10px;
+    text-decoration: none;
+    color: rgb(56, 121, 76);
+    border-radius: 5px;
+    width: 125px;
+}
+
+
+li:hover .secret{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    top: -5px;
+    left: 90px;
+}
+
+
+.secret{
+    display:none;
+    position: absolute;
+}
+
+li:not(#A):hover {
+    background-color: rgb(118, 128, 185);
+    padding: 5px 5px;
+  }
+
+p{
+    position:fixed;
+    top:100px;
+    left:220px;
+    font-size: 15px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+
+#A:hover{
+    background-color:rgb(163, 174, 231);
+    padding: 5px 5px;
+}
+
+
