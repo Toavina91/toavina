@@ -8,11 +8,7 @@ import Model.*;
 
 public class CitoyenView extends JFrame {
 	
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	private Timer timer; // Pour la gestion du défilement des images
+    private Timer timer; // Pour la gestion du défilement des images
     private int currentImageIndex = 0; // Index de l'image actuelle
     private ImageIcon[] images = { // Tableau contenant les chemins des images à afficher
         new ImageIcon("images/1.jpg"),
@@ -98,7 +94,7 @@ public class CitoyenView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mairieController.afficherCitoyenTable();
-                }
+            }
         });
 
                              

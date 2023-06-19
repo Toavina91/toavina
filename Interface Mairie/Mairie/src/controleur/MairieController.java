@@ -97,16 +97,8 @@ public class MairieController {
         long idC = Long.parseLong(id);
         
         Citoyen nvcitoyen = new Citoyen(identifiant, nom, prenom, date, sexe, idC);
-        Citoyen conjoint = mairie.rechercheCitoyen(nvcitoyen.getidConjoint());
-        if (conjoint.getidConjoint() != 0) {
-        	JOptionPane.showMessageDialog(null, "Le citoyen est déjà marié ");
-	        return;
-        }
-        else {
-        	mairie.marier(nvcitoyen, conjoint);
-        }
+
         mairie.ajouterCitoyen(nvcitoyen);
-        
         JOptionPane.showMessageDialog(null, "Bienvenu dans notre ville " + nvcitoyen.getPrenom() + " ! ");
         	
         
